@@ -7,7 +7,8 @@ Ci si riferisce all'editor VSCode
 2. Nella cartella del repository eseguire il comando:
     
     ```
-    mvn clean install archetype:update-local-catalog
+    mvn archetype:jar
+    mvn install
     mvn archetype:crawl
     ```
 

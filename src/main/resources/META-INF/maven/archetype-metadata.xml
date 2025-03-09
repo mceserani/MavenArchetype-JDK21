@@ -13,16 +13,11 @@
             <directory></directory>
             <includes>
 				<include>.gitattributes</include>
-                <include>_gitignore</include>
+                <include>.gitignore</include>
             </includes>
             <excludes>
                 <exclude>**/*.bak</exclude>
             </excludes>
-            <!-- Mappatura per rinominare _gitignore in .gitignore -->
-            <fileMapping>
-                <sourceName>_gitignore</sourceName>
-                <targetName>.gitignore</targetName>
-            </fileMapping>
         </fileSet>
 
         <fileSet filtered="true" packaged="true">
