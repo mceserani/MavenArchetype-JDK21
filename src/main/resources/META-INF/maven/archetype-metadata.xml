@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <archetype-descriptor name="Basic JDK 21 Archetype">
 
-
 	<requiredProperties>
         <requiredProperty key="main-class-name">
         </requiredProperty>
@@ -9,21 +8,21 @@
         </requiredProperty>
     </requiredProperties>
 
-    <!--Add new fileset for resources-->
-    <!--Set filtered="true" to process files in that directory as templates-->
-    <!--Set packaged="false" to remove package folder structure from resource directory-->
     <fileSets>
         <fileSet filtered="true" packaged="false">
             <directory></directory>
-
-            <!--Filters-->
             <includes>
 				<include>.gitattributes</include>
-                <include>.gitignore</include>
+                <include>_gitignore</include>
             </includes>
             <excludes>
                 <exclude>**/*.bak</exclude>
             </excludes>
+            <!-- Mappatura per rinominare _gitignore in .gitignore -->
+            <fileMapping>
+                <sourceName>_gitignore</sourceName>
+                <targetName>.gitignore</targetName>
+            </fileMapping>
         </fileSet>
 
         <fileSet filtered="true" packaged="true">
