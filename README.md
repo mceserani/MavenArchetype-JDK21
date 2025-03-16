@@ -4,9 +4,10 @@
 Ci si riferisce all'editor VSCode
 
 1. Clonare il repository
-2. Nella cartella del repository eseguire il comando:
+2. Nella cartella del repository eseguire i comandi:
     
     ```
+    mvn clean compile
     mvn archetype:jar
     mvn install
     mvn archetype:crawl
